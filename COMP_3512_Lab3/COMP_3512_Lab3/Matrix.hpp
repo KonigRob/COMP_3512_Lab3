@@ -31,5 +31,9 @@ public:
 	Matrix operator--(int);
 	friend Matrix operator+(Matrix, const Matrix&);
 	friend Matrix operator-(Matrix, const Matrix&);
+	void swap(Matrix&, Matrix&);
+	Matrix& operator=(Matrix);
+	Matrix& operator+=(const Matrix&);
+	Matrix& operator-=(const Matrix&);
 };
 
