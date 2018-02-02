@@ -1,6 +1,7 @@
 #pragma once
 
 #include <math.h>
+#include <iostream>
 #include <ostream>
 using namespace std;
 
@@ -12,7 +13,7 @@ class Matrix
 public:
 	Matrix();
 	Matrix(int);
-	Matrix(int [], int);
+	Matrix(int[], int);
 	~Matrix();
 	void set_value(int, int, int);
 	int get_value(int, int) const;
