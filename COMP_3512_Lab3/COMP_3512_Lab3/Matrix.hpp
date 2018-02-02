@@ -14,6 +14,7 @@ public:
 	Matrix();
 	Matrix(int);
 	Matrix(int[], int);
+	Matrix(const Matrix&);
 	~Matrix();
 	void set_value(int, int, int);
 	int get_value(int, int) const;

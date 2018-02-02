@@ -18,17 +18,20 @@ int main()
 	b.clear();
 
 	Matrix identity = a.identity();
+	cout << identity << endl;
 
-	Matrix d;
-	Matrix e;
+	Matrix d(2);
+	Matrix e(2);
 
 	if (d == e) { cout << "equal" << endl; }
 	if (d >= e) { cout << "c is greater than d" << endl; }
 
 	Matrix f = d + e;
-	cout << f;
+	cout << "F: " << f << endl; //error
 
-	//Matrix d += a;
+	d += a;
+
+	cout << "D: " << d << endl; //error
 
 	system("pause");
 	return 0;
